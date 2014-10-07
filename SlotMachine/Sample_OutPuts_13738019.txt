@@ -1,0 +1,117 @@
+Joe Duffin - 13738019
+Assignment 1
+
+Sample outputs
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Welcome to the SlotMachine!
+
+You have 10.00 Dollars, Please enter bet: 5
+
+The Results: |BANANA| |MONSTER| |MONSTER|
+
+***Two Match!***
+
+You won 2.50 Dollars
+
+You have 12.50 Dollars.
+
+Would you like another go? (y/n) n
+
+Congratulations!! You won 2.50 Dollars more than you started with!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Welcome to the SlotMachine!
+
+You have 10.00 Dollars, Please enter bet: 5
+
+The Results: |BANANA| |CHEESE| |MONSTER|
+
+***No matches :(***
+
+You lost 5.00 Dollars
+
+You have 5.00 Dollars.
+
+Would you like another go? (y/n) y
+
+You have 5.00 Dollars, Please enter bet: f
+
+That is not an acceptable bet.
+
+You have 5.00 Dollars, Please enter bet: 5
+
+The Results: |MONSTER| |MONSTER| |MONSTER|
+
+***All three match!***
+
+You won 5.00 Dollars
+
+You have 10.00 Dollars.
+
+Would you like another go? (y/n) u
+
+Incorrect Input
+
+You have 10.00 Dollars.
+
+Would you like another go? (y/n) y
+
+You have 10.00 Dollars, Please enter bet: 5
+
+The Results: |BANANA| |CHEESE| |MONSTER|
+
+***No matches :(***
+
+You lost 5.00 Dollars
+
+You have 5.00 Dollars.
+
+Would you like another go? (y/n) n
+
+Unfortunately you lost 5.00 Dollars.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Welcome to the SlotMachine!
+
+You have 10.00 Dollars, Please enter bet: 100
+
+Please bet an amount you have.
+
+You have 10.00 Dollars, Please enter bet: 5
+
+The Results: |CHEESE| |MONSTER| |BANANA|
+
+***No matches :(***
+
+You lost 5.00 Dollars
+
+You have 5.00 Dollars.
+
+Would you like another go? (y/n) y
+
+You have 5.00 Dollars, Please enter bet: -10
+
+Your bet needs to be greater than 2.
+
+You have 5.00 Dollars, Please enter bet: 5
+
+The Results: |BANANA| |MONSTER| |BANANA|
+
+***Two Match!***
+
+You won 2.50 Dollars
+
+You have 7.50 Dollars.
+
+Would you like another go? (y/n) n
+
+Unfortunately you lost 2.50 Dollars.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
