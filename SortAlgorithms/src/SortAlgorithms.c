@@ -3,7 +3,7 @@
  Name        : SortAlgorithms.c
  Author      : JoeDuffin
  Description : This program is an exercise in several sorting algorithms,
- 	 	 	   Currently only bubbleSort is implemented.
+ 	 	 	   Currently bubble and selection sort are implemented.
  ============================================================================
  */
 
