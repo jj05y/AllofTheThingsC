@@ -48,7 +48,7 @@ void bubbleSort(int myInts[]) {
 }
 
 int main(void) {
-	int myInts[100];
+	int myInts[ARRAY_LEN];
 
 	populate(myInts);
 
