@@ -13,7 +13,6 @@ using namespace std;
 // Classes
 ////////////////////////////////////////////////////////////////////////////////
 
-
 class card {
 	friend class deck;
 private:
@@ -29,11 +28,10 @@ public:
 	int getSuit() {
 		return suitInt;
 	}
-	;
+
 	int getNum() {
 		return numInt;
 	}
-	;
 
 };
 
@@ -50,7 +48,6 @@ public:
 // Methods for Deck
 ////////////////////////////////////////////////////////////////////////////////
 
-
 deck::deck(string suits[], string nums[]) {
 	cout << "making deck" << endl;
 	for (int i = 0; i < 52; i++) {
@@ -65,16 +62,28 @@ void deck::sort() {
 	card temp;
 
 	for (int i = 0; i < 51; i++) {
-		for (int j = i+1; j < 52; j++) {
-			if (cards[i].getNum() < cards[j].getNum() && cards[i].getSuit() < cards[j].getSuit()) {
+		for (int j = i + 1; j < 52; j++) {
+			if (cards[i].getSuit() < cards[j].getSuit()) {
 				temp = cards[i];
 				cards[i] = cards[j];
 				cards[j] = temp;
 			}
 		}
 	}
-}
 
+	for (int i = 1; i <= 4; i++) {
+		for (int j = 0; j < 12; j++) {
+			for (int k = j + 1; k < 13; k++) {
+				if (cards[i * j].getNum() < cards[k * i].getNum()) {
+					temp = cards[i];
+					cards[i] = cards[j];
+					cards[j] = temp;
+				}
+			}
+		}
+	}
+
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Methods for Card
@@ -99,7 +108,6 @@ string card::toString() {
 // Main
 ////////////////////////////////////////////////////////////////////////////////
 
-
 int main() {
 	string suits[] = { "Hearts", "Diamonds", "Spades", "Clubs" };
 	string nums[] = { "Ace", "Two", "Three", "Four", "Five", "Six", "Seven",
@@ -107,12 +115,18 @@ int main() {
 
 	deck theDeck(suits, nums);
 
+	cout << endl;
+	cout << "The Deck after creation" << endl;
+	cout << endl;
+
 	for (int i = 0; i < 52; i++) {
 		cout << theDeck.cards[i].toString() << endl;
 	}
 
 	theDeck.sort();
-	cout << "sorting" << endl;
+	cout << endl;
+	cout << "The Deck after Sorting" << endl;
+	cout << endl;
 	for (int i = 0; i < 52; i++) {
 		cout << theDeck.cards[i].toString() << endl;
 	}
