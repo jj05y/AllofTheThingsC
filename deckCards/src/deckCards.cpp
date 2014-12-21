@@ -62,26 +62,14 @@ void deck::sort() {
 	card temp;
 
 	for (int i = 0; i < 51; i++) {
-		for (int j = i + 1; j < 52; j++) {
-			if (cards[i].getSuit() < cards[j].getSuit()) {
-				temp = cards[i];
-				cards[i] = cards[j];
-				cards[j] = temp;
-			}
-		}
-	}
-
-	for (int i = 1; i <= 4; i++) {
-		for (int j = 0; j < 12; j++) {
-			for (int k = j + 1; k < 13; k++) {
-				if (cards[i * j].getNum() < cards[k * i].getNum()) {
+			for (int j = i + 1; j < 52; j++) {
+				if (cards[j].getSuit()*(cards[j].getNum()+100) < cards[i].getSuit()*(cards[i].getNum()+100)) {
 					temp = cards[i];
 					cards[i] = cards[j];
 					cards[j] = temp;
 				}
 			}
 		}
-	}
 
 }
 
@@ -126,9 +114,10 @@ int main() {
 	theDeck.sort();
 	cout << endl;
 	cout << "The Deck after Sorting" << endl;
-	cout << endl;
 	for (int i = 0; i < 52; i++) {
+		if (i % 13 == 0) cout << endl;
 		cout << theDeck.cards[i].toString() << endl;
+
 	}
 
 	return 0;
